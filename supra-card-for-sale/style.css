@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(45deg, rgb(6, 41, 48) 0%, rgb(40, 135, 199) 100%);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 30px;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.box {
+  width: 100%;
+  height: 100%;
+}
+img {
+  background-position: center;
+  background-size: cover;
+  height: 300;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.255);
+}
+h1 {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 2.4rem;
+  font-family: "Righteous", cursive;
+}
+p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 150%;
+  font-family: "Teko", sans-serif;
+}
+.buttons {
+  margin-top: 18px;
+}
+button.preview,
+button.buy {
+  border-radius: 24px;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24;
+  font-size: 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(2, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+}
+button.preview + button.buy {
+  margin-left: 10px;
+}
+button:hover {
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+button.buy {
+  background: rgba(0, 212, 255, 0.9);
+  color: rgba(255, 255, 255, 0.96);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: 0.3s ease;
+}
